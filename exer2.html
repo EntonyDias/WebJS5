@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lulu Curtindo o Verão</title>
+
+</head>
+
+<body>
+    <button id="addAitem" onclick="poppy()">Pix</button>
+    <button id="addAitem" onclick="tristana()">Pixie</button>
+    <ul id="lista">
+    
+    </ul>
+
+
+    <script>
+        var idoso = 0;
+        function poppy() {
+            
+            var elementu = document.querySelector('ul');
+            var elementar = elementu.getElementsByTagName('li');
+            let addItem = document.createElement("li");
+            document.getElementById("lista").appendChild(addItem);
+            addItem.id = 'idoso';
+            idoso ++;
+            addItem.textContent = "Item" + " " + elementar.length;
+        }
+
+        function tristana() {
+            let remItem = document.getElementById("lista");
+            if (remItem) {
+                        document.getElementById("idoso").removeChild(remItem);
+                }
+        }
+
+    </script>
+</body>
+
+</html>
