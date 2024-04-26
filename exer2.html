@@ -10,7 +10,7 @@
 
 <body>
     <button id="addAitem" onclick="poppy()">Pix</button>
-    <button id="addAitem" onclick="tristana()">Pixie</button>
+    <button id="remItem" onclick="tristana()">Pixie</button>
     <ul id="lista">
     
     </ul>
@@ -24,16 +24,17 @@
             var elementar = elementu.getElementsByTagName('li');
             let addItem = document.createElement("li");
             document.getElementById("lista").appendChild(addItem);
-            addItem.id = 'idoso';
+            addItem.id = idoso;
             idoso ++;
             addItem.textContent = "Item" + " " + elementar.length;
         }
 
         function tristana() {
-            let remItem = document.getElementById("lista");
+            idoso--;
+            let remItem = document.getElementById(idoso);
             if (remItem) {
-                        document.getElementById("idoso").removeChild(remItem);
-                }
+                document.getElementById("lista").removeChild(remItem);
+            }
         }
 
     </script>

@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lulu Guardiã Estelar</title>
+    
 </head>
 <body>
-    
+    <div id="quadrado" style="width: 100px; height: 100px;
+    background-color: rebeccapurple; transition: all 3s;"></div>
 </body>
+<script>
+    const quadrado = document.getElementById('quadrado');
+quadrado.addEventListener('mouseover', function() {
+this.style.transform = "translateX(388px)";
+});
+quadrado.addEventListener('mouseout', function() {
+this.style.transform = "translateX(0px)";
+});
+</script>
 </html>
